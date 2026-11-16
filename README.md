@@ -2,7 +2,7 @@
 
 API REST feita em Python + Flask que permite enviar (upload) e baixar (download) arquivos. Os arquivos são salvos na pasta `uploads/` e cada envio é registrado em `uploads.log`.
 
-API no ar: https://SEU-APP.onrender.com
+API no ar: https://upload-download-5say.onrender.com
 
 ## Tecnologias
 
@@ -32,7 +32,7 @@ API no ar: https://SEU-APP.onrender.com
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+git clone https://github.com/Matheus-VictorRDS5/upload-download.git
 cd SEU-REPOSITORIO
 
 # 2. Criar e ativar o ambiente virtual
@@ -68,7 +68,7 @@ A API fica em `http://127.0.0.1:5000`.
 **Upload** (Postman: método POST, Body → form-data, chave `file` do tipo *File*)
 
 ```bash
-curl -X POST -F "file=@teste.txt" https://SEU-APP.onrender.com/uploads/upload
+curl -X POST -F "file=@teste.txt"  https://upload-download-5say.onrender.com
 ```
 
 Resposta `200`:
@@ -87,7 +87,7 @@ Erros possíveis (`400`):
 **Download**
 
 ```bash
-curl -O https://SEU-APP.onrender.com/downloads/teste.txt
+curl -O  https://upload-download-5say.onrender.com
 ```
 
 Se o arquivo não existir (`404`):
